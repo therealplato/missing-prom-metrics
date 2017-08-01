@@ -16,10 +16,10 @@ func (s *Snitch) Start() {
 		err error
 		lst net.Listener
 		mux = http.NewServeMux()
-		srv = http.Server{Addr: "0.0.0.0", Handler: mux}
+		srv = http.Server{Addr: "0.0.0.0:9009", Handler: mux}
 	)
 
-	if lst, err = net.Listen("tcp", "0.0.0.0"); err != nil {
+	if lst, err = net.Listen("tcp", "0.0.0.0:9009"); err != nil {
 		log.Fatal(fmt.Sprintf("snitch failed to listen: %s", err))
 	}
 
