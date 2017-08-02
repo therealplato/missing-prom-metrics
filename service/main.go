@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/movio/red/share/metrics"
+	"github.com/therealplato/missing-prom-metrics/metrics"
 	"github.com/therealplato/missing-prom-metrics/snitch"
 )
 
